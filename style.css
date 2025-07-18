@@ -1,16 +1,30 @@
+body{
+    margin: 0;
+}
+
 div {
     background-color: white;
-    border: solid black 2px;
-    height: 10px;
-    width: 10px;
+    border: solid black 1px;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+}
+
+.divDraw{
+    height: 40px;
+    width: 40px;
 }
 
 .container{
     display: flex;
-    background-color: white;
+    justify-content: center;
     border: none;
 }
 
 .containerDiv{
     display: flex;
+    flex-direction: column;
+    border: none;
 }
