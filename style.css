@@ -26,5 +26,16 @@ div {
 .containerDiv{
     display: flex;
     flex-direction: column;
-    border: none;
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+    border-right: none;
+    border-left: none;
+}
+
+.containerDiv.a1{
+    border-left: solid 1px black;
+}
+
+.containerDiv.a16{
+    border-right: solid 1px black;
 }
