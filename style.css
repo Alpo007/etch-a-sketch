@@ -1,5 +1,4 @@
 div {
-    display:flex;
     background-color: white;
     border: solid black 2px;
     height: 10px;
@@ -7,7 +6,11 @@ div {
 }
 
 .container{
-    display:flex;
+    display: flex;
     background-color: white;
     border: none;
+}
+
+.containerDiv{
+    display: flex;
 }
