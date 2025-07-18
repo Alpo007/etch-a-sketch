@@ -1,4 +1,5 @@
 const container = document.querySelector('.container');
+const green = document.querySelector('#green');
 
 for (let i = 0+1; i <= 16; i++){
     const containerDiv = document.createElement('div');
