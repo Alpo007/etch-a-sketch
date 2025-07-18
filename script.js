@@ -13,11 +13,3 @@ for (let i = 0+1; i <= 16; i++){
         containerDiv.appendChild(divDraw);
 }   
 }
-
-/**
-for (let i = 0+1; i <= 16; i++){
-    const divDraw = document.createElement('div');
-    divDraw.classList.add('divDraw');
-    const selectContainerDiv = document.querySelector('.containerDiv'+i);   
-    selectContainerDiv.appendChild(divDraw);
-} **/

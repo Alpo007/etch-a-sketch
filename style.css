@@ -39,3 +39,12 @@ div {
 .containerDiv.a16{
     border-right: solid 1px black;
 }
+
+.divDraw:hover{
+    background-color: #CCC;
+}
+
+.divDraw:not(:hover){
+    transition: background-color 0.5s linear;
+    transition-delay: 0;
+}
