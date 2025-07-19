@@ -66,6 +66,8 @@ button{
     width: 80px;
     margin: 10px;
     border: solid 2px black;
+    color: rgb(87, 221, 255);
+    font-size: 15px;
 }
 
 button:hover{

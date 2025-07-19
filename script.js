@@ -23,27 +23,62 @@ for (let i = 0+1; i <= 16; i++){
 
 green.addEventListener('click' , function(){
     color = 'green';
-    console.log(color);
+    yellow.textContent = '';
+    blue.textContent = '';
+    red.textContent = '';
+    black.textContent = '';
+    eraser.textContent = 'Eraser';
+    green.textContent = 'Selected';
 });
 
 yellow.addEventListener('click' , function(e){
     color = 'yellow';
+    yellow.textContent = 'Selected';
+    blue.textContent = '';
+    red.textContent = '';
+    black.textContent = '';
+    eraser.textContent = 'Eraser';
+    green.textContent = '';
 });
 
 blue.addEventListener('click' , function(e){
     color = 'blue';
+    yellow.textContent = '';
+    blue.textContent = 'Selected';
+    red.textContent = '';
+    black.textContent = '';
+    eraser.textContent = 'Eraser';
+    green.textContent = '';
 });
 
 red.addEventListener('click' , function(e){
     color = 'red';
+    yellow.textContent = '';
+    blue.textContent = '';
+    red.textContent = 'Selected';
+    black.textContent = '';
+    eraser.textContent = 'Eraser';
+    green.textContent = '';
 });
 
 black.addEventListener('click' , function(e){
     color = 'black';
+    yellow.textContent = '';
+    blue.textContent = '';
+    red.textContent = '';
+    black.textContent = 'Selected';
+    eraser.textContent = 'Eraser';
+    green.textContent = '';
 });
 
 eraser.addEventListener('click' , function(e){
     color = 'eraser';
+    yellow.textContent = '';
+    blue.textContent = '';
+    red.textContent = '';
+    black.textContent = '';
+    eraser.textContent = 'Eraser Selected';
+    green.textContent = '';
 });
 
 const drawingDivs = document.querySelectorAll('.divDraw');
