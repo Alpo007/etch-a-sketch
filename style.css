@@ -19,6 +19,19 @@ div {
     text-decoration: underline;
 }
 
+#rainbow{
+    width: 150px;
+    margin-left: 10px;
+    height: 30px;
+    margin-top: auto;
+    font-weight: bold;
+}
+
+#rainbow:hover{
+    background-color: #CCC;
+    cursor: pointer;
+}
+
 #gridSize{
     width: 200px;
     margin-left: 100px;
@@ -157,3 +170,27 @@ button:hover{
     position: sticky;
 }
 
+#r{
+    color: purple;
+}
+#a{
+    color: blue;
+}
+#i{
+    color: cyan;
+}
+#n{
+    color: green;
+}
+#b{
+    color: yellow;
+}
+#o{
+    color: orange;
+}
+#w{
+    color: red;
+}
+#x{
+    color: black;
+}

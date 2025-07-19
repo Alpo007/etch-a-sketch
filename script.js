@@ -8,7 +8,9 @@ const blue = document.querySelector('#blue');
 const red = document.querySelector('#red');
 const black = document.querySelector('#black');
 const eraser = document.querySelector('#eraser');
+const rainbow = document.querySelector('#rainbow');
 const gridSize = document.querySelector('#gridSize');
+const drawingDivs = document.querySelectorAll('.divDraw');
 
 for (let i = 0+1; i <= 16; i++){
         const containerDiv = document.createElement('div');
@@ -80,6 +82,22 @@ black.addEventListener('click' , function(e){
     green.textContent = '';
 });
 
+let r;
+let b;
+let g;
+let randomBetween;
+
+rainbow.addEventListener('click', function(e){
+    color = 'rainbow';
+
+    yellow.textContent = '';
+    blue.textContent = '';
+    red.textContent = '';
+    black.textContent = '';
+    eraser.textContent = 'Eraser';
+    green.textContent = '';
+});
+
 eraser.addEventListener('click' , function(e){
     color = 'eraser';
     yellow.textContent = '';
@@ -90,7 +108,6 @@ eraser.addEventListener('click' , function(e){
     green.textContent = '';
 });
 
-const drawingDivs = document.querySelectorAll('.divDraw');
 let isMouseDown = false;
 
 document.addEventListener('mousedown', () => isMouseDown = true);
@@ -126,6 +143,12 @@ function addDrawingListeners() {
             if (isMouseDown) {
                 if (color === 'eraser') {
                     box.style.background = '';
+                } else if (color === 'rainbow') {
+                    const randomBetween = (min, max) => min + Math.floor(Math.random() * (max - min + 1));
+                    const r = randomBetween(0, 255);
+                    const g = randomBetween(0, 255);
+                    const b = randomBetween(0, 255);
+                    box.style.background = `rgb(${r},${g},${b})`;
                 } else {
                     box.style.background = color;
                 }
