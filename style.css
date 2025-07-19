@@ -40,6 +40,11 @@ div {
     border-right: solid 4px black;
 }
 
+.divDraw{
+    -webkit-user-drag: none;
+    user-select: none;
+}
+
 .divDraw:hover{
     background-color: #CCC;
 }
