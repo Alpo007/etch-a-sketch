@@ -7,9 +7,30 @@ div {
     border: solid black 1px;
 }
 
+.title{
+    display: flex;
+    border: none;
+    justify-content: center;
+}
+
 .header{
     display: flex;
     justify-content: center;
+    text-decoration: underline;
+}
+
+#gridSize{
+    width: 200px;
+    margin-left: 100px;
+    height: 30px;
+    margin-top: auto;
+    color: black;
+    font-weight: bold;
+}
+
+#gridSize:hover{
+    background-color: #CCC;
+    cursor: pointer;
 }
 
 .divDraw{
@@ -144,4 +165,6 @@ button:hover{
     position: absolute;
     bottom: 0;
     width: 100%;
+    position: sticky;
 }
+
