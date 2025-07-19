@@ -57,15 +57,15 @@ drawingDivs.forEach((box) => {
         if (color === 'green' && isMouseDown == true){
             box.style.cssText = 'background: green';
         } else if (color === 'yellow' && isMouseDown == true){
-            box.style.cssText = 'background: yellow'
+            box.style.cssText = 'background: yellow';
         } else if (color === 'blue' && isMouseDown == true){
-            box.style.cssText = 'background: blue'
+            box.style.cssText = 'background: blue';
         } else if (color === 'red' && isMouseDown == true){
-            box.style.cssText = 'background: red'
+            box.style.cssText = 'background: red';
         } else if (color === 'black' && isMouseDown == true){
-            box.style.cssText = 'background: black'
+            box.style.cssText = 'background: black';
         } else if (color === 'eraser' && isMouseDown == true){
-            box.style.cssText = 'background: white'
+            box.style.cssText = '';
         }
     });
 });
