@@ -47,21 +47,24 @@ eraser.addEventListener('click' , function(e){
 });
 
 const drawingDivs = document.querySelectorAll('.divDraw');
-let selectedBox;
+let isMouseDown = false;
+
+document.addEventListener('mousedown', () => isMouseDown = true);
+document.addEventListener('mouseup', () => isMouseDown = false);
 
 drawingDivs.forEach((box) => {
-    box.addEventListener('click', () => {
-        if (color === 'green'){
+    box.addEventListener('mouseover', () => {
+        if (color === 'green' && isMouseDown == true){
             box.style.cssText = 'background: green';
-        } else if (color === 'yellow'){
+        } else if (color === 'yellow' && isMouseDown == true){
             box.style.cssText = 'background: yellow'
-        } else if (color === 'blue'){
+        } else if (color === 'blue' && isMouseDown == true){
             box.style.cssText = 'background: blue'
-        } else if (color === 'red'){
+        } else if (color === 'red' && isMouseDown == true){
             box.style.cssText = 'background: red'
-        } else if (color === 'black'){
+        } else if (color === 'black' && isMouseDown == true){
             box.style.cssText = 'background: black'
-        } else if (color === 'eraser'){
+        } else if (color === 'eraser' && isMouseDown == true){
             box.style.cssText = 'background: white'
         }
     });
